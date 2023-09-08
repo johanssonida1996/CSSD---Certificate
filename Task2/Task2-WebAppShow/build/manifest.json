@@ -1,0 +1,22 @@
+{
+  "id": "Task2-WebAppShow",
+  "version": "0.0.1",
+  "name": {
+    "en": "Task2-WebAppShow",
+    "sv": "Task2-WebAppShow"
+  },
+  "author": "Ida Johansson",
+  "description": {
+    "en": "A WebApp that show infomration from a datastore",
+    "sv": "En WebApp som visar information från en datastore"
+  },
+  "helpUrl": "https://example.com/webapps",
+  "type": "WebApp",
+  "bundled": true,
+  "requiredLibs": {
+    "react": "17.0.2"
+  },
+  "storage":{
+    "collectionDataStore": "feedback"
+  }
+}

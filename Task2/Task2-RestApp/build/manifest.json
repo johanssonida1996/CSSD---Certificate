@@ -1,0 +1,13 @@
+{
+  "id": "Task2-RestApp",
+  "version": "0.0.1",
+  "name": "Task2-RestApp",
+  "author": "Ida Johansson",
+  "description": "A RestApp for task 2",
+  "helpUrl": "https://example.com/restapps",
+  "type": "RESTApp",
+  "bundled": true,
+  "storage": {
+    "collectionDataStore": "feedback"
+  }
+}

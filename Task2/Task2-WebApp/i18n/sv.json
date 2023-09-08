@@ -1,0 +1,12 @@
+{
+  "hello": "Hej",
+  "settings": "Inställningar",
+  "name": "Namn",
+  "email": "Mail",
+  "email_placeholder": "Skriv i en mail",
+  "feedback": "Feedback",
+  "namePlaceholder": "Skriv ditt namn",
+  "feedbackPlaceholder": "Skriv din feedback",
+  "uploadSuccess": "Tack för att du delar din feedback!",
+  "noPrivUserConfigured": "Ingen priviligerad användare vald"
+}

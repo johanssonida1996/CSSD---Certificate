@@ -1,0 +1,12 @@
+{
+  "hello": "Hello",
+  "settings": "Settings",
+  "name": "Name",
+  "email": "Mail",
+  "email_placeholder": "Enter a mail",
+  "feedback": "Feedback",
+  "namePlaceholder": "Provide your name",
+  "feedbackPlaceholder": "Provide your feedback",
+  "uploadSuccess": "Thank you for sharing your feedback!",
+  "noPrivUserConfigured": "No privileged user selected"
+}
