@@ -1,9 +1,9 @@
 {
-  "id": "Task1-WebApp",
+  "id": "News-List",
   "version": "0.0.1",
   "name": {
-    "en": "Task1-WebApp",
-    "sv": "Task1-WebApp"
+    "en": "News-List",
+    "sv": "News-List"
   },
   "author": "Ida Johansson",
   "description": {

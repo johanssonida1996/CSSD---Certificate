@@ -1,5 +1,5 @@
 {
-  "name": "Task1-WebApp",
+  "name": "News-List",
   "version": "0.0.1",
   "dependencies": {
     "@sitevision/api": "^2023.8.1",

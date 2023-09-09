@@ -25,12 +25,13 @@ const isTrashed = (node) => {
  
    return pageFeedback
      .map((data) => {
-       const { page, name, feedback } = data;
+       const { page, name, feedback, isOutdated } = data;
        const pageNode = resourceLocatorUtil.getNodeByIdentifier(page);
        if (!isTrashed(pageNode)) {
          const mappedFeedback = {
            name,
            feedback,
+           isOutdated
          };
 
           const nameProperty = nodeTypeUtil.isArticle(pageNode)

@@ -1,5 +1,5 @@
 {
-  "name": "Task2-RestApp",
+  "name": "Feedback - RestApp",
   "version": "0.0.1",
   "dependencies": {
     "@sitevision/api": "^2023.8.1",

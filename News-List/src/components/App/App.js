@@ -4,20 +4,16 @@ import PropTypes from "prop-types";
 
 
 const ArchiveList = ({ articles, articleCount }) => {
-  const [newsArticles, setArticles] = React.useState(articles);
+  const newsArticles = articles.slice(0, articleCount);
 
   return (
-    newsArticles && newsArticles.length ?
-    <div className="env-cardholder-grid">
-      {
-       newsArticles.slice(0, articleCount).map((article) => 
-       article ?
-       <Article key={article.id} article={article} />
-       : null
-       )
-      }
-    </div>
-    : null
+    newsArticles && newsArticles.length ? (
+      <div className="env-cardholder-grid">
+        {newsArticles.map((article) =>
+          article ? <Article key={article.id} article={article} /> : null
+        )}
+      </div>
+    ) : null
   );
 };
 

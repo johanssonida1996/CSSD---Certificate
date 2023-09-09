@@ -1,5 +1,4 @@
 import propertyUtil from '@sitevision/api/server/PropertyUtil';
-import dateUtil from '@sitevision/api/server/DateUtil';
 import utils from '@sitevision/api/server/Utils';
 import properties from '@sitevision/api/server/Properties';
 import searchFactory from '@sitevision/api/server/SearchFactory';

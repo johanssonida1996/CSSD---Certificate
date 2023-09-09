@@ -1,12 +1,12 @@
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].oneOf[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/App/App.scss ***!
-  \*****************************************************************************************************************************************************************************************************/
-.Tf4fPu0Mh38c3ARWYBz4 {
-  background-color: var(--env-block-background-color);
-  border: 1px solid var(--env-block-border-color);
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].oneOf[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Feedback/styles.scss ***!
+  \*************************************************************************************************************************************************************************************************************/
+.cH4FGWKOzXaGz6o4qoi4 {
+  color: var(--env-element-danger-background-color);
+  font-weight: 600;
 }
 
-.Xw3wxW2FZdgyKSUOEDiA {
-  font-family: var(--env-font-family);
-  color: var(--env-block-font-color);
+.v9s01ZjzzHrd79ROBf9r {
+  color: var(--env-element-success-background-color);
+  font-weight: 600;
 }

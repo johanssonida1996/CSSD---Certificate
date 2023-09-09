@@ -1,11 +1,10 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import i18n from "@sitevision/api/common/i18n";
+import styles from './styles.scss';
 
 
-const check = restApp.get()
-
-const Feedback = ({ name, feedback, pageName, pageURI }) => {
+const Feedback = ({ name, feedback, pageName, pageURI, isOutDated }) => {
   return (
     <article className="env-card env-block env-shadow">
       <div className="env-card__body">
@@ -24,16 +23,24 @@ const Feedback = ({ name, feedback, pageName, pageURI }) => {
         <p className="env-card__text" aria-hidden>
           {feedback}
         </p>
-        <p></p>
+        <br />
+        {isOutDated ? (
+           <p className={styles.isOutdated}>Utdaterad</p>
+          ) : (
+            <p className={styles.isActive}>Aktiv</p>
+          )}
       </div>
     </article>
   );
 };
 
 Feedback.propTypes = {
-  page: PropTypes.string,
   name: PropTypes.string,
   feedback: PropTypes.string,
+  pageName: PropTypes.string,
+  pageURI: PropTypes.string,
+  isOutDated: PropTypes.bool,
 };
+
 
 export default Feedback;

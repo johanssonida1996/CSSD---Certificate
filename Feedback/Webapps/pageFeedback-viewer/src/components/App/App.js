@@ -8,10 +8,8 @@ import events from "@sitevision/api/common/events";
 const App = ({ feedbacks }) => {
   const [pageFeedback, setFeedback] = React.useState(feedbacks);
 
-  console.log(pageFeedback);
-
   React.useEffect(() => {
-    events.on("pageFeed:reload", () => {
+    events.on("pageFeedback:reload", () => {
       requester
         .doGet({ url: router.getStandaloneUrl("/feedbacks") })
         .then((response) => setFeedback(response.feedbacks));
@@ -21,7 +19,7 @@ const App = ({ feedbacks }) => {
   return (
     <div className="env-cardholder-grid">
       {pageFeedback.map((feedback) => (
-        <FeedbackfromFile key={feedback.id} {...feedback} />
+        <FeedbackfromFile key={feedback.id} {...feedback} isOutDated={feedback.isOutdated} />
       ))}
     </div>
   );

@@ -1,14 +1,14 @@
 {
-  "id": "Task2-WebApp",
+  "id": "pageFeedback-module",
   "version": "0.0.1",
   "name": {
-    "en": "Task2-Webapp",
-    "sv": "Task2-Webapp"
+    "en": "Feedback-module",
+    "sv": "Feedback-module"
   },
   "author": "Ida Johansson",
   "description": {
-    "en": "A WebApp for Task 2",
-    "sv": "En WebApp för uppgift 2"
+    "en": "A WebApp for feedback",
+    "sv": "En WebApp för feedback"
   },
   "helpUrl": "https://example.com/webapps",
   "type": "WebApp",

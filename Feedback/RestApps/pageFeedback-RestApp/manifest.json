@@ -1,9 +1,9 @@
 {
-  "id": "Task2-RestApp",
+  "id": "pageFeedback-RestApp",
   "version": "0.0.1",
-  "name": "Task2-RestApp",
+  "name": "Feedback - RestApp",
   "author": "Ida Johansson",
-  "description": "A RestApp for task 2",
+  "description": "A RestApp for feedback",
   "helpUrl": "https://example.com/restapps",
   "type": "RESTApp",
   "bundled": true,

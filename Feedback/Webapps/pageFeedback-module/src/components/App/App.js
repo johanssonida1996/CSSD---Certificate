@@ -28,7 +28,7 @@ const App = () => {
         message: i18n.get("uploadSuccess"),
         type: "success",
       });
-      events.trigger("pageFeed:reload");
+      events.trigger("pageFeedback:reload");
     })
     .catch((error) => {
       console.error("ERROR: " + JSON.stringify(error));

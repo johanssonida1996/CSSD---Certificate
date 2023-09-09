@@ -1,14 +1,14 @@
 {
-  "id": "Task2-WebAppShow",
+  "id": "pageFeedback-viewer",
   "version": "0.0.1",
   "name": {
-    "en": "Task2-WebAppShow",
-    "sv": "Task2-WebAppShow"
+    "en": "Feedback - Viewer",
+    "sv": "Feedback - Viewer"
   },
   "author": "Ida Johansson",
   "description": {
-    "en": "A WebApp that show infomration from a datastore",
-    "sv": "En WebApp som visar information från en datastore"
+    "en": "A WebApp that view feedback from a datastore",
+    "sv": "En WebApp som visar feedback från en datastore"
   },
   "helpUrl": "https://example.com/webapps",
   "type": "WebApp",
