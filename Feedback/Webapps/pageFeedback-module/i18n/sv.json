@@ -8,5 +8,6 @@
   "namePlaceholder": "Skriv ditt namn",
   "feedbackPlaceholder": "Skriv din feedback",
   "uploadSuccess": "Tack för att du delar din feedback!",
-  "noPrivUserConfigured": "Ingen priviligerad användare vald"
+  "noPrivUserConfigured": "Ingen priviligerad användare vald",
+  "offlineMode": "Denna app visas bara i onlineläge"
 }

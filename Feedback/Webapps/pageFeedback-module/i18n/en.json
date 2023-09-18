@@ -8,5 +8,6 @@
   "namePlaceholder": "Provide your name",
   "feedbackPlaceholder": "Provide your feedback",
   "uploadSuccess": "Thank you for sharing your feedback!",
-  "noPrivUserConfigured": "No privileged user selected"
+  "noPrivUserConfigured": "No privileged user selected",
+  "offlineMode": "This app only appears in online mode"
 }

@@ -8,6 +8,8 @@ import resourceLocatorUtil from "@sitevision/api/server/ResourceLocatorUtil";
 import systemUserUtil from "@sitevision/api/server/SystemUserUtil";
 import properties from "@sitevision/api/server/Properties";
 import storage from "@sitevision/api/server/storage";
+import i18n from "@sitevision/api/common/i18n";
+import versionUtil from "@sitevision/api/server/VersionUtil";
 const feedbackStore = storage.getCollectionDataStore("feedback");
 
 
@@ -25,6 +27,15 @@ router.use((req, res, next) => {
 });
 
 router.get("/", (req, res) => {
+
+  if(versionUtil.getCurrentVersion() != versionUtil.ONLINE_VERSION) {    
+    return res.send(
+      `<span class="env-text env-text--error">
+    ${i18n.get("offlineMode")}
+    </span>`
+    );
+  }
+
   const html = renderToString(<App />);
   res.agnosticRender(html, {});
   
@@ -50,7 +61,7 @@ router.post("/feedback", (req, res) => {
     name: name,
     feedback: feedback,
     pageName: pageName,
-    pageURL: pageData
+    pageURL: pageData.Url,
 };
 
   if (post) {
