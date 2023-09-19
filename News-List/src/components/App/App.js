@@ -3,13 +3,12 @@ import Article from "../Article";
 import PropTypes from "prop-types";
 
 
-const ArchiveList = ({ articles, articleCount }) => {
-  const newsArticles = articles.slice(0, articleCount);
+const ArchiveList = ({ articles }) => {
 
   return (
-    newsArticles && newsArticles.length ? (
+    articles ? (
       <div className="env-cardholder-grid">
-        {newsArticles.map((article) =>
+        {articles.map((article) =>
           article ? <Article key={article.id} article={article} /> : null
         )}
       </div>
@@ -19,7 +18,6 @@ const ArchiveList = ({ articles, articleCount }) => {
 
 ArchiveList.propTypes = {
   articles: PropTypes.array,
-  articleCount: PropTypes.string,
 };
 
 export default ArchiveList;

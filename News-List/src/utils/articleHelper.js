@@ -3,7 +3,7 @@ import utils from '@sitevision/api/server/Utils';
 import properties from '@sitevision/api/server/Properties';
 import searchFactory from '@sitevision/api/server/SearchFactory';
 
-function getArticlesInArchive(archive) {
+function getArticlesInArchive(archive, articleCount) {
    let items = [],
    filterBuilder = searchFactory.filterBuilder,
    sortBuilder = searchFactory.sortBuilder,
@@ -20,7 +20,7 @@ function getArticlesInArchive(archive) {
 
    let filterForSearch = filterBuilder.addFilterQuery("+svtype:article").build();
 
-   let searchResult = searcherBuilder.setSort(sortField).setFilter(filterForSearch).build().search('*', 10);
+   let searchResult = searcherBuilder.setSort(sortField).setFilter(filterForSearch).build().search('*', articleCount);
 
 
 
@@ -49,8 +49,8 @@ function getPageProps(node) {
       item = {
         id: node.getIdentifier(),
         title: pageProps["SV.Title"],
-        description: trimDescription(pageProps["SV.Description"]),
-        content: trimContent(pageProps["SV.Content"]),
+        description: trimText(pageProps["SV.Description"], 100),
+        content: trimText(pageProps["SV.Content"], 300),
         image: getRenderedImage(imageNode),
         URI: pageProps.URI,
       };
@@ -60,24 +60,12 @@ function getPageProps(node) {
    return item;
 }
 
-function trimDescription(description) {
-   let length = 100;
-   if (description) {
-      if (description.length > 101) {
-         description = description.substring(0, length) + '...';
-      }
+function trimText(text, length) {
+   let textLimit = length + 1;
+   if (text && text.length > textLimit) {
+      text = text.substring(0, length) + '...';
    }
-   return description;
-}
-
-function trimContent(content) {
-   let length = 300;
-   if (content) {
-      if (content.length > 301) {
-         content = content.substring(0, length) + '...';
-      }
-   }
-   return content;
+   return text;
 }
 
 function getRenderedImage(imageNode) {

@@ -9,5 +9,6 @@
   "feedbackPlaceholder": "Skriv din feedback",
   "uploadSuccess": "Tack för att du delar din feedback!",
   "noPrivUserConfigured": "Ingen priviligerad användare vald",
-  "offlineMode": "Denna app visas bara i onlineläge"
+  "offlineMode": "Denna app visas bara i onlineläge",
+  "submitButton": "Skicka feedback"
 }

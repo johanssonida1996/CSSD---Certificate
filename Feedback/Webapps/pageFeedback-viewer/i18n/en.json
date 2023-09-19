@@ -4,5 +4,7 @@
   "pageFeedback": "Feedback for this page",
   "feedbackFrom": "Feedback from {0}",
   "for": " for ",
-  "configureModule": "Configure module"
+  "configureModule": "Configure module",
+  "isOutdated": "Outdated",
+  "isActive": "Active"
 }

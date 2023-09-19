@@ -4,9 +4,11 @@
 .cH4FGWKOzXaGz6o4qoi4 {
   color: var(--env-element-danger-background-color);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .v9s01ZjzzHrd79ROBf9r {
   color: var(--env-element-success-background-color);
   font-weight: 600;
+  text-transform: uppercase;
 }

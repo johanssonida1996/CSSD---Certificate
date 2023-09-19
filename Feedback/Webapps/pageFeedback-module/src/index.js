@@ -56,6 +56,8 @@ router.post("/feedback", (req, res) => {
     isOutdated
   });
 
+  feedbackStore.instantIndex(post.dsid);
+
   const mail = {
     email: appData.get('email'),
     name: name,

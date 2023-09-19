@@ -25,9 +25,9 @@ const Feedback = ({ name, feedback, pageName, pageURI, isOutDated }) => {
         </p>
         <br />
         {isOutDated ? (
-           <p className={styles.isOutdated}>Utdaterad</p>
+           <p className={styles.isOutdated}>{i18n.get("isOutdated")}</p>
           ) : (
-            <p className={styles.isActive}>Aktiv</p>
+            <p className={styles.isActive}>{i18n.get("isActive")}</p>
           )}
       </div>
     </article>

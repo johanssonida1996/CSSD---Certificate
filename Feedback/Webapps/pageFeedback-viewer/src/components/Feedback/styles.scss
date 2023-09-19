@@ -1,8 +1,11 @@
 .isOutdated{
    color: var(--env-element-danger-background-color);
    font-weight: 600;
+   text-transform: uppercase;
+   
 }
 .isActive{
    color: var(--env-element-success-background-color);
    font-weight: 600;
+   text-transform: uppercase;
 }

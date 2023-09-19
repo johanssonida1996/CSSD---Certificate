@@ -42,7 +42,7 @@ const App = () => {
         <TextInput name="feedback" type="text" />
         <div className="env-form-element">
           <button type="submit" className="env-button env-button--primary">
-            Skicka feedback
+            {i18n.get("submitButton")}
           </button>
         </div>
       </form>

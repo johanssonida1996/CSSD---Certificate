@@ -15,11 +15,10 @@ router.get("/", (req, res) => {
   articles = []
   let articleCount = appData.get('articleCount');
 
-  articles = getArticlesInArchive(archive);
+  articles = getArticlesInArchive(archive, articleCount);
 
-  res.agnosticRender(renderToString(<ArchiveList articles={articles} articleCount={articleCount} />), {
+  res.agnosticRender(renderToString(<ArchiveList articles={articles} articleCount={articles.articleCount} />), {
     articles,
-    articleCount
   });
 });
 

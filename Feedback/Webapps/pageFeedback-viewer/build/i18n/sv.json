@@ -4,5 +4,7 @@
   "pageFeedback": "Feedback för denna sida",
   "feedbackFrom": "Feedback från {0}",
   "for": " till ",
-  "configureModule": "Konfigurerar modulen"
+  "configureModule": "Konfigurerar modulen",
+  "isOutdated": "Utdaterad",
+  "isActive": "Aktiv"
 }
